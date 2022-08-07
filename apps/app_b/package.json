@@ -1,0 +1,8 @@
+{
+  "name": "app-b",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ../../dist/apps/app_a/bin/www.js"
+  }
+}
