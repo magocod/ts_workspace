@@ -37,6 +37,7 @@
   "workspaces": [
     "packages\\a",
     "packages\\b",
+    "packages\\c",
     "apps\\app_a",
     "apps\\app_b"
   ],
