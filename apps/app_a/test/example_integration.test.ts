@@ -14,7 +14,9 @@ describe("example_integration", function () {
             a: 2,
             alias_a: 2,
             app: "app_a",
-            b: 3
+            b: 3,
+            c: 4,
+            b_and_c: 7,
         })
     });
 

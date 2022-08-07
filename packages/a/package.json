@@ -6,6 +6,8 @@
   "description": "",
   "scripts": {
     "build": "tsc",
+    "build:clean": "npm run clean && npm run build",
+    "clean": "rimraf ./dist",
     "test": "jest"
   },
   "repository": {
