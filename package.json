@@ -4,9 +4,16 @@
   "description": "practice monorepo ts",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./dist",
+    "clean:dependencies": "rimraf ./node_modules",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:src": "jest --testPathPattern=ts_workspace/test",
+    "test:packages": "jest --testPathPattern=/packages",
+    "test:a": "jest --testPathPattern=/packages/a",
+    "test:b": "jest --testPathPattern=/packages/b"
   },
   "repository": {
     "type": "git",
@@ -22,6 +29,9 @@
     "packages\\a",
     "packages\\b"
   ],
+  "dependencies": {
+    "@ts_workspace/a": "./packages/a"
+  },
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "jest": "^28.1.3",

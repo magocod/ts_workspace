@@ -1,13 +1,14 @@
 import { callFromSrc } from "../src"
 
 describe("call_packages", () => {
-  const name = "js";
-
   it("call src function", () => {
     const v = callFromSrc();
 
     expect(v).toEqual({
-      src: 1
+      src: 1,
+      a: 2,
+      alias_a: 2,
+      b: 3
     });
   });
 });

@@ -1,9 +1,10 @@
 {
   "name": "a",
   "version": "1.0.0",
+  "main": "./src/index.ts",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {

@@ -1,8 +1,8 @@
 {
   "name": "b",
   "version": "1.0.0",
+  "main": "./src/index.ts",
   "description": "",
-  "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "jest"
