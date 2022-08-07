@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-const app = require('../app');
+import app from '../app';
 // const debug = require('debug')('app-a:server');
-const http = require('http');
+import http from 'http';
 
 import { normalizePort, onListening, onError } from "a"
 

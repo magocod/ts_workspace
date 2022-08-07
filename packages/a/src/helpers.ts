@@ -1,12 +1,14 @@
 import { Server } from "http";
 
+// eslint-disable-next-line
 const debug = require('debug')('app-a:server');
 
 /**
  * Normalize a port into a number, string, or false.
  */
+// eslint-disable-next-line
 export function normalizePort(val: any) {
-    let port = parseInt(val, 10);
+    const port = parseInt(val, 10);
 
     if (isNaN(port)) {
         // named pipe
@@ -24,12 +26,13 @@ export function normalizePort(val: any) {
 /**
  * Event listener for HTTP server "error" event.
  */
+// eslint-disable-next-line
 export function onError(error: any, port: number | string) {
     if (error.syscall !== 'listen') {
         throw error;
     }
 
-    let bind = typeof port === 'string'
+    const bind = typeof port === 'string'
         ? 'Pipe ' + port
         : 'Port ' + port;
 
@@ -53,9 +56,10 @@ export function onError(error: any, port: number | string) {
  */
 export function onListening(port: number, server: Server) {
     return function () {
-        let addr = server.address();
-        let bind = typeof addr === 'string'
+        const addr = server.address();
+        const bind = typeof addr === 'string'
             ? 'pipe ' + addr
+            // eslint-disable-next-line
             : 'port ' + addr!.port;
         debug('Listening on ' + bind);
         console.log(`Server is running http://localhost:${port}...`);

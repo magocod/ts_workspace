@@ -4,18 +4,18 @@
  * Module dependencies.
  */
 
-const app = require('../app');
+import app from "../app";
 // const debug = require('debug')('app-a:server');
-const http = require('http');
+import http from "http";
 
-import { normalizePort, onListening, onError } from "a"
+import { normalizePort, onListening, onError } from "a";
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+const port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
 
 /**
  * Create HTTP server.
@@ -28,8 +28,8 @@ const server = http.createServer(app);
  */
 
 server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening(port, server));
+server.on("error", onError);
+server.on("listening", onListening(port, server));
 
 // /**
 //  * Normalize a port into a number, string, or false.
@@ -92,4 +92,4 @@ server.on('listening', onListening(port, server));
 //     console.log(`Server is running http://localhost:${port}...`);
 // }
 
-export {}
+export {};
