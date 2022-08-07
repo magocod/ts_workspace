@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1654b09e-6c61-4540-a6d4-3bd4a6c3eae3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/a/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/a/jest.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/a/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/a/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/a/test/call_a.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/a/test/call_a.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/a/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/a/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/b/jest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/b/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/b/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/b/test/call_b.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/b/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/call_packages.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/call_packages.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/b/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/b/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659889542165</updated>
-      <workItem from="1659889543486" duration="10441000" />
+      <workItem from="1659889543486" duration="10661000" />
     </task>
     <servers />
   </component>
