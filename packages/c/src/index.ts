@@ -5,5 +5,7 @@ export function callFromC() {
 }
 
 export function internalCallBFromC() {
-    return callFromB() + callFromC();
+  return callFromB() + callFromC();
 }
+
+export * from "./services";

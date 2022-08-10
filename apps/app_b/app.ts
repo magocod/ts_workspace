@@ -7,6 +7,8 @@ import logger from "morgan";
 import { callFromA } from "a";
 import { callFromA as aliasCallFromA } from "@ts_workspace/a";
 import { callFromB } from "b";
+import { utils } from "b";
+import { AService } from "c";
 
 const app = express();
 
@@ -26,6 +28,8 @@ app.get("/", (req: Request, res: Response) => {
     a: callFromA(),
     alias_a: aliasCallFromA(),
     b: callFromB(),
+    b_utils: utils.utilityA(),
+    c_service: new AService()
   });
 });
 
