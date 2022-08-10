@@ -18,8 +18,8 @@
     "test:coverage": "jest --coverage",
     "test:src": "jest --testPathPattern=ts_workspace/test",
     "test:packages": "jest --testPathPattern=/packages",
-    "test:a": "jest --testPathPattern=/packages/a",
-    "test:b": "jest --testPathPattern=/packages/b",
+    "test:packages:a": "jest --testPathPattern=/packages/a",
+    "test:packages:b": "jest --testPathPattern=/packages/b",
     "test:apps": "jest --testPathPattern=/apps",
     "test:apps:app_a": "jest --testPathPattern=/apps/app_a",
     "test:apps:app_b": "jest --testPathPattern=/apps/app_b"
