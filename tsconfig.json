@@ -1,9 +1,11 @@
 {
   "exclude": [
+    "src",
     "test",
     "packages",
     "apps/app_a/test",
-    "apps/app_b/test"
+    "apps/app_b/test",
+    "apps/app_c/test"
   ],
   "include": ["src", "apps"],
   "compilerOptions": {

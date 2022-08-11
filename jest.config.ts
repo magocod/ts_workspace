@@ -5,7 +5,8 @@ const config: Config.InitialOptions = {
   verbose: true,
   preset: "ts-jest",
   testEnvironment: "node",
-  // globalSetup: "./test/setup.ts",
-  // globalTeardown: "./test/teardown.ts",
+  globalSetup: "./test/setup.ts",
+  globalTeardown: "./test/teardown.ts",
+  testPathIgnorePatterns: ["./packages"],
 };
 export default config;
