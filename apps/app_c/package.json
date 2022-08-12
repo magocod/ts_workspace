@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ../../dist/apps/app_c/bin/www.js"
+    "start": "node ../../dist/app_c/src/bin/www.js"
   }
 }
