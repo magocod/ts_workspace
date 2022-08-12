@@ -4,11 +4,10 @@
   "description": "practice monorepo ts",
   "main": "index.js",
   "scripts": {
-    "start:app_a": "npm run build && node ./dist/apps/app_a/bin/www.js",
-    "start:app_b": "npm run build && node ./dist/apps/app_b/bin/www.js",
-    "start:watch:app_a": "nodemon --watch app --watch dist dist/app_a/bin/www.js",
-    "start:watch:app_b": "nodemon --watch app --watch dist dist/app_b/bin/www.js",
-    "start:watch:app_c": "nodemon --watch app --watch dist dist/app_c/src/bin/www.js",
+    "start:app_a": "npm run build && node ./dist/app_a/bin/www.js",
+    "start:watch:app_a": "nodemon dist/app_a/bin/www.js",
+    "start:watch:app_b": "nodemon dist/app_b/bin/www.js",
+    "start:watch:app_c": "nodemon dist/app_c/src/bin/www.js",
     "start:dev:app_a": "tsc-watch --onSuccess \"node ./dist/app_a/bin/www.js\"",
     "build:watch": "tsc -w",
     "build:watch:packages:a": "cd packages/a && tsc -w",
@@ -46,15 +45,14 @@
   "workspaces": [
     "packages\\a",
     "packages\\b",
-    "packages\\c",
-    "apps\\app_a",
-    "apps\\app_b"
+    "packages\\c"
   ],
   "dependencies": {
     "@ts_workspace/a": "./packages/a",
     "@typescript-eslint/parser": "^5.32.0",
     "cookie-parser": "^1.4.6",
     "debug": "^4.3.4",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "http-errors": "^2.0.0",
     "morgan": "^1.10.0",
