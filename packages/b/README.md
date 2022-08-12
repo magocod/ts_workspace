@@ -1,1 +1,3 @@
 # PACKAGE B
+
+* other dependencies

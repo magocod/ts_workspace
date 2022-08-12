@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/magocod/ts_workspace/issues"
   },
-  "homepage": "https://github.com/magocod/ts_workspace#readme"
+  "homepage": "https://github.com/magocod/ts_workspace#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.4"
+  }
 }
