@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ../../dist/app_a/bin/www.js",
-    "start:watch": "nodemon ../../dist/app_a/bin/www.js"
+    "start:watch": "nodemon ../../dist/app_a/bin/www.js",
+    "test": "jest"
   }
 }
