@@ -9,6 +9,8 @@
     "start:watch:app_b": "nodemon dist/app_b/bin/www.js",
     "start:watch:app_c": "nodemon dist/app_c/src/bin/www.js",
     "start:dev:app_a": "tsc-watch --onSuccess \"node ./dist/app_a/bin/www.js\"",
+    "start:dev:app_b": "tsc-watch --onSuccess \"node ./dist/app_b/bin/www.js\"",
+    "start:dev:app_c": "tsc-watch --onSuccess \"node ./dist/app_c/src/bin/www.js\"",
     "build:watch": "tsc -w",
     "build:watch:packages:a": "cd packages/a && tsc -w",
     "build:watch:packages:b": "cd packages/b && tsc -w",

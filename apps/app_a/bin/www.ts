@@ -29,7 +29,7 @@ const server = http.createServer(app);
 
 server.listen(port);
 server.on("error", onError);
-server.on("listening", onListening(port, server));
+server.on("listening", onListening(port as number, server));
 
 // /**
 //  * Normalize a port into a number, string, or false.

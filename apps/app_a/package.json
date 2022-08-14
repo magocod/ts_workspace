@@ -4,6 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ../../dist/app_a/bin/www.js",
-    "start:watch": "nodemon ../../dist/app_a/bin/www.js"
+    "start:watch": "nodemon ../../dist/app_a/bin/www.js",
+    "start:dev": "tsc-watch --onSuccess \"node ../../dist/app_a/bin/www.js\"",
+    "build": "tsc",
+    "build:clean": "npm run clean && npm run build",
+    "clean": "rimraf ./dist",
+    "test": "jest"
   }
 }

@@ -3,6 +3,7 @@ import type { Config } from "@jest/types";
 
 // Sync object
 const config: Config.InitialOptions = {
+    displayName: "package_a",
     verbose: true,
     preset: "ts-jest",
     testEnvironment: "node",

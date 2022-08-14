@@ -6,9 +6,8 @@ const debug = require('debug')('app-a:server');
 /**
  * Normalize a port into a number, string, or false.
  */
-// eslint-disable-next-line
-export function normalizePort(val: any) {
-    const port = parseInt(val, 10);
+export function normalizePort(val: string) {
+    const port = parseInt(val as string, 10);
 
     if (isNaN(port)) {
         // named pipe
