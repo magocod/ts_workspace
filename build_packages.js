@@ -9,8 +9,8 @@ function backTop() {
  *
  * @param {string} packageName
  */
-function compile(name) {
-  shell.cd("packages/" + name);
+function compile(packageName) {
+  shell.cd("packages/" + packageName);
   shell.echo("build package");
   shell.echo(shell.pwd());
   shell.exec("npm run build");
