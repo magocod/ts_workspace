@@ -9,6 +9,6 @@
     "build": "tsc",
     "build:clean": "npm run clean && npm run build",
     "clean": "rimraf ./dist",
-    "test": "jest"
+    "test": "mocha -r ts-node/register test/**/*.test.ts --recursive"
   }
 }

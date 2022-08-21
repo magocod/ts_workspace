@@ -1,3 +1,4 @@
+import { assert } from "chai";
 import app from "../src/app";
 import supertest from "supertest";
 
@@ -9,8 +10,8 @@ describe("example_integration", function () {
 
     // console.log(response.body);
 
-    expect(response.status).toEqual(200);
-    expect(response.body).toStrictEqual({
+    assert.equal(response.status, 200);
+    assert.deepEqual(response.body, {
       a: 2,
       alias_a: 2,
       app: "app_c",
@@ -25,7 +26,7 @@ describe("example_integration", function () {
 
     // console.log(response.body);
 
-    expect(response.status).toEqual(404);
-    expect(response.body).toStrictEqual({});
+    assert.equal(response.status, 404);
+    assert.deepEqual(response.body, { message: "Not Found" })
   });
 });

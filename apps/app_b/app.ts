@@ -2,12 +2,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import createError from "http-errors";
-import express, { Request, Response, ErrorRequestHandler } from "express";
+import express, { Request, Response } from "express";
 // import path from 'path';
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 
-import { callFromA } from "a";
+import { callFromA, errorHandler} from "a";
 import { callFromA as aliasCallFromA } from "@ts_workspace/a";
 import { callFromB } from "b";
 import { utils } from "b";
@@ -42,15 +42,17 @@ app.use(function (req, res, next) {
 });
 
 // error handler
-app.use(function (err, req, res) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
+// app.use(function (err, req, res) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get("env") === "development" ? err : {};
+//
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render("error");
+// } as ErrorRequestHandler);
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render("error");
-} as ErrorRequestHandler);
+app.use(errorHandler);
 
 // module.exports = app;
 export = app;
